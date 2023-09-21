@@ -15,7 +15,7 @@ document.addEventListener('click', function (e) {
 })
 
 async function handleResponce(serch) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=6597f4de&s=${serch.value}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=6597f4de&s=${serch.value}`)
     const data = await res.json()
 
     movieList.innerHTML = ''
@@ -29,7 +29,7 @@ async function handleResponce(serch) {
 }
 
 async function handleRenderMovie(imdbID) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=6597f4de&i=${imdbID}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=6597f4de&i=${imdbID}`)
     const movieData = await res.json()
 
     movieInfo.push(movieData)

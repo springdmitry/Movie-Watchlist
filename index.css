@@ -45,6 +45,7 @@ body {
     border: none;
     background-color: #A5A5A5;
     color: white;
+    cursor: pointer;
 }
 /* HEADER */
 header h1,

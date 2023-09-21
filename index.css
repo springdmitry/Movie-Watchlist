@@ -178,7 +178,7 @@ header {
 .addBtn {
     grid-area: addBtn;
     background-color: #121212;
-    border: 1px solid greenyellow;
+    border: 0px solid white;
     color: #FFFFFF;
     cursor: pointer;
     padding: 7px;
@@ -186,13 +186,15 @@ header {
     height: fit-content;
 }
 
-.addBtn:hover{
+.addBtn:hover > .fa-plus, .addBtn:active > .fa-plus {
+    background-color: greenyellow;
+}
+
+
+.addBtn:hover, .addBtn:active {
     color:greenyellow;
 }
 
-.addBtn:active{
-    color:greenyellow;
-}
 
 .plot {
     grid-area: plot;

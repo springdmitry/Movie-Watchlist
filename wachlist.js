@@ -3,7 +3,8 @@ let savedMovies = []
 
 
 document.addEventListener('click', function (e) {
-    if (e.target.name === 'btn') {
+    console.log(e.target.name)
+    if (e.target.className === "fa-solid fa-minus" || e.target.name === 'btn') {
         localStorage.removeItem(`${e.target.id}`)
         savedMovies = []
         renderList()
@@ -30,7 +31,7 @@ function renderList() {
                     <p class="runtime">${movieData[0].Runtime}</p>
                     <p class="genre">${movieData[0].Genre}</p>
                     <button id="${movieData[0].imdbID}" class="addBtn" name="btn">
-                        <i class="fa-solid fa-minus" style="color: #121212;"></i>
+                        <i id="${movieData[0].imdbID}" class="fa-solid fa-minus" style="color: #121212;" name="btn"></i>
                         Remove
                     </button>
                     <p class="plot">${movieData[0].Plot}</p>

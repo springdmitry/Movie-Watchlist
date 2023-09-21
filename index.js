@@ -8,7 +8,7 @@ serchForm.addEventListener('submit', (e) => {
 })
 
 document.addEventListener('click', function (e) {
-    if (e.target.className === 'addBtn') {
+    if (e.target.name === 'btn') {
         let savedMovie = movieInfo.filter(movie => movie.imdbID === e.target.id)
         localStorage.setItem(`${e.target.id}`, JSON.stringify(savedMovie))
     }
@@ -42,8 +42,8 @@ async function handleRenderMovie(imdbID) {
             <p class="year">${movieData.Year}</>
             <p class="runtime">${movieData.Runtime}</p>
             <p class="genre">${movieData.Genre}</p>
-            <button id="${imdbID}" class="addBtn"> 
-                <i class="fa-solid fa-plus" style="color: #121212;"></i> 
+            <button id="${imdbID}" class="addBtn" name="btn"> 
+                <i class="fa-solid fa-plus" style="color: #121212;"></i>
                 Watchlist
             </button>
             <p class="plot">${movieData.Plot}</p>

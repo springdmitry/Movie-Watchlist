@@ -178,11 +178,12 @@ header {
 .addBtn {
     grid-area: addBtn;
     background-color: #121212;
-    border: none;
+    border: 1px solid greenyellow;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 2px;
-
+    padding: 7px;
+    width: fit-content;
+    height: fit-content;
 }
 
 .addBtn:hover{

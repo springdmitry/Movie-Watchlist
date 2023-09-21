@@ -185,6 +185,18 @@ header {
 
 }
 
+.fa-plus:hover {
+    background-color: greenyellow;
+}
+
+.addBtn:hover{
+    color:greenyellow;
+}
+
+.addBtn:active{
+    color:greenyellow;
+}
+
 .plot {
     grid-area: plot;
 }

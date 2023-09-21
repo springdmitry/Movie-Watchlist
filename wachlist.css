@@ -41,7 +41,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 23%;
+    gap: 23%;
     background-image: url("img/sung-jin-cho--Er7Hzoe-Pk-unsplash.jpg");
     background-position-y: 60%;
     background-size: cover;

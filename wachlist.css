@@ -30,7 +30,6 @@ header h1 {
 header a {
     text-decoration: none;
     font-weight: 700;
-    /* padding-top: 15px; */
     font-size: 1rem;
 }
 
@@ -38,12 +37,11 @@ header {
     flex: 0 0 208px;
     margin: 0px auto;
     width: 100vw;
-    /* height: 208px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 23%;
+    row-gap: 23%;
     background-image: url("img/sung-jin-cho--Er7Hzoe-Pk-unsplash.jpg");
     background-position-y: 60%;
     background-size: cover;
@@ -62,6 +60,7 @@ header {
     margin: 0;
     color: #A5A5A5;
     font-weight: 700;
+    text-align: center;
 }
 
 .placeholder a {

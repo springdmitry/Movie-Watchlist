@@ -31,7 +31,7 @@ function renderList() {
                     <p class="genre">${movieData[0].Genre}</p>
                     <button id="${movieData[0].imdbID}" class="addBtn">
                         <i class="fa-solid fa-minus" style="color: #121212;"></i>
-                        Watchlist
+                        Remove
                     </button>
                     <p class="plot">${movieData[0].Plot}</p>
                 </div>
